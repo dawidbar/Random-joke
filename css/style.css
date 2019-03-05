@@ -1,140 +1,39 @@
-body {
-  background: #2d2d2d;
-}
+body { background: #2d2d2d; }
 
-body #joke {
-  color: #fff;
-  font-size: 1.7em;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-}
+body #joke { color: #fff; font-size: 1.7em; text-align: center; font-family: 'Quicksand', sans-serif; font-weight: 400; }
 
-body .portfolio-experiment {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 50vh;
-}
+body .portfolio-experiment { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; height: 50vh; }
 
-body .portfolio-experiment a {
-  color: white;
-  padding: 0.7em calc(0.7em * 1.2);
-  display: inline-block;
-  border: 3px solid transparent;
-  position: relative;
-  font-size: 1.5em;
-  cursor: pointer;
-  letter-spacing: 0.07em;
-}
+body .portfolio-experiment a { color: white; padding: 0.7em calc(0.7em * 1.2); display: inline-block; border: 3px solid transparent; position: relative; font-size: 1.5em; cursor: pointer; letter-spacing: 0.07em; }
 
-body .portfolio-experiment a .text {
-  font-family: 'Luckiest Guy', cursive;
-  font-weight: 400;
-  transform: translate3d(0, 0.7em, 0);
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-}
+body .portfolio-experiment a .text { font-family: 'Luckiest Guy', cursive; font-weight: 400; transform: translate3d(0, 0.7em, 0); display: block; transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s; }
 
-body .portfolio-experiment a:after {
-  position: absolute;
-  content: '';
-  bottom: -3px;
-  left: calc(0.7em * 1.2);
-  right: calc(0.7em * 1.2);
-  height: 3px;
-  background: #f26522;
-  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
-  transform-origin: left;
-}
+body .portfolio-experiment a:after { position: absolute; content: ''; bottom: -3px; left: calc(0.7em * 1.2); right: calc(0.7em * 1.2); height: 3px; background: #f26522; transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s; transform-origin: left; }
 
-body .portfolio-experiment .line {
-  position: absolute;
-  background: #f26522;
-}
+body .portfolio-experiment .line { position: absolute; background: #f26522; }
 
-body .portfolio-experiment .line.-right, body .portfolio-experiment .line.-left {
-  width: 3px;
-  bottom: -3px;
-  top: -3px;
-  transform: scale3d(1, 0, 1);
-}
+body .portfolio-experiment .line.-right, body .portfolio-experiment .line.-left { width: 3px; bottom: -3px; top: -3px; transform: scale3d(1, 0, 1); }
 
-body .portfolio-experiment .line.-top, body .portfolio-experiment .line.-bottom {
-  height: 3px;
-  left: -3px;
-  right: -3px;
-  transform: scale3d(0, 1, 1);
-}
+body .portfolio-experiment .line.-top, body .portfolio-experiment .line.-bottom { height: 3px; left: -3px; right: -3px; transform: scale3d(0, 1, 1); }
 
-body .portfolio-experiment .line.-right {
-  right: -3px;
-  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
-  transform-origin: top;
-}
+body .portfolio-experiment .line.-right { right: -3px; transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s; transform-origin: top; }
 
-body .portfolio-experiment .line.-top {
-  top: -3px;
-  transition: transform 0.08s linear 0.43s;
-  transform-origin: left;
-}
+body .portfolio-experiment .line.-top { top: -3px; transition: transform 0.08s linear 0.43s; transform-origin: left; }
 
-body .portfolio-experiment .line.-left {
-  left: -3px;
-  transition: transform 0.08s linear 0.51s;
-  transform-origin: bottom;
-}
+body .portfolio-experiment .line.-left { left: -3px; transition: transform 0.08s linear 0.51s; transform-origin: bottom; }
 
-body .portfolio-experiment .line.-bottom {
-  bottom: -3px;
-  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
-  transform-origin: right;
-}
+body .portfolio-experiment .line.-bottom { bottom: -3px; transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01); transform-origin: right; }
 
-body .portfolio-experiment a:hover .text,
-body .portfolio-experiment a:active .text {
-  transform: translate3d(0, 0, 0);
-  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-}
+body .portfolio-experiment a:hover .text, body .portfolio-experiment a:active .text { transform: translate3d(0, 0, 0); transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s; }
 
-body .portfolio-experiment a:hover:after,
-body .portfolio-experiment a:active:after {
-  transform: scale3d(0, 1, 1);
-  right: -3px;
-  left: -3px;
-  transform-origin: right;
-  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
-}
+body .portfolio-experiment a:hover:after, body .portfolio-experiment a:active:after { transform: scale3d(0, 1, 1); right: -3px; left: -3px; transform-origin: right; transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s; }
 
-body .portfolio-experiment a:hover .line,
-body .portfolio-experiment a:active .line {
-  transform: scale3d(1, 1, 1);
-}
+body .portfolio-experiment a:hover .line, body .portfolio-experiment a:active .line { transform: scale3d(1, 1, 1); }
 
-body .portfolio-experiment a:hover .line.-right,
-body .portfolio-experiment a:active .line.-right {
-  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
-  transform-origin: bottom;
-}
+body .portfolio-experiment a:hover .line.-right, body .portfolio-experiment a:active .line.-right { transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s; transform-origin: bottom; }
 
-body .portfolio-experiment a:hover .line.-top,
-body .portfolio-experiment a:active .line.-top {
-  transition: transform 0.08s linear 0.4s;
-  transform-origin: right;
-}
+body .portfolio-experiment a:hover .line.-top, body .portfolio-experiment a:active .line.-top { transition: transform 0.08s linear 0.4s; transform-origin: right; }
 
-body .portfolio-experiment a:hover .line.-left,
-body .portfolio-experiment a:active .line.-left {
-  transition: transform 0.08s linear 0.48s;
-  transform-origin: top;
-}
+body .portfolio-experiment a:hover .line.-left, body .portfolio-experiment a:active .line.-left { transition: transform 0.08s linear 0.48s; transform-origin: top; }
 
-body .portfolio-experiment a:hover .line.-bottom,
-body .portfolio-experiment a:active .line.-bottom {
-  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
-  transform-origin: left;
-}
-/*# sourceMappingURL=style.css.map */
+body .portfolio-experiment a:hover .line.-bottom, body .portfolio-experiment a:active .line.-bottom { transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s; transform-origin: left; }
